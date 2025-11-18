@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reinkarnasi Kultivasi Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🌌 Reinkarnasi Kultivasi Simulator</h1>
+        <div id="status-panel">
+            <h2>Status Karakter</h2>
+            <p><strong>Nama:</strong> <span id="nama"></span></p>
+            <p><strong>Tahap:</strong> <span id="tahap"></span></p>
+            <p><strong>Qi:</strong> <span id="qi"></span> / <span id="qiMax"></span></p>
+            <p><strong>Akar Spiritual:</strong> <span id="akar"></span></p>
+            <p><strong>Karma:</strong> <span id="karma"></span></p>
+            <hr>
+            <h3>Stats Tambahan:</h3>
+            <p><strong>Pemahaman:</strong> <span id="pemahaman"></span></p>
+            <p><strong>Keberuntungan:</strong> <span id="keberuntungan"></span></p>
+        </div>
+
+        <div id="event-panel">
+            <h2>📜 Kejadian Dunia</h2>
+            <div id="narasi"></div>
+            <div id="opsi-container">
+            </div>
+        </div>
+
+        <div id="aksi-panel">
+            <button onclick="kultivasiAksi()">Meditasi (Kultivasi)</button>
+            <button onclick="eventAcak()">Jelajahi Dunia</button>
+            <button onclick="gachaWarisan()">Gacha Peti Warisan (Simulasi Top-Up)</button>
+        </div>
+        
+        <div id="inventaris-panel">
+            <h2>🎒 Inventaris</h2>
+            <p id="inventaris"></p>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
